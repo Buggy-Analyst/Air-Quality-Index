@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Quality Trend Analysis Using Open Environmental Data | Boisar/Tarapur</title>
+  
+  <!-- Academic / Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar (Exactly 3 Options) -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand-block">
+        <span class="project-tag">B.Sc. Data Science</span>
+        <span class="brand-title">Air Quality Analytics</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-view="home">Home</a></li>
+          <li><a href="#information" class="nav-link" data-view="information">Information</a></li>
+          <li><a href="#findings" class="nav-link" data-view="findings">Findings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+
+    <!-- ==================== 1. HOME PAGE ==================== -->
+    <section id="view-home" class="page-view active-view">
+      <div class="home-hero">
+        <div class="academic-badge">Academic Research Project</div>
+        <h1 class="hero-title">Air Quality Trend Analysis Using Open Environmental Data</h1>
+        <p class="hero-subtitle">
+          Spatial &amp; Temporal Evaluation of Ambient Air Quality in Boisar / Tarapur (June, July &amp; August)
+        </p>
+
+        <!-- College Project Introduction Box -->
+        <div class="card intro-card">
+          <h2 class="card-section-title">About the Project</h2>
+          <p class="card-text">
+            This website analyzes ambient air-quality trends using open environmental data collected from multiple strategic locations across the <strong>Boisar / Tarapur</strong> region in Palghar district, Maharashtra. As one of Western India's prominent industrial estates (MIDC) situated adjacent to residential, institutional, and coastal zones, Boisar presents a vital case study for environmental data science.
+          </p>
+          <p class="card-text">
+            Users can select a specific monitoring location to examine <strong>Air Quality Index (AQI)</strong> trajectories and individual pollutant concentrations (<strong>PM2.5, PM10, NO₂, SO₂, and CO</strong>) across the monsoon period covering <strong>June, July, and August</strong> through interactive, dynamic data visualizations.
+          </p>
+          <div class="hero-actions">
+            <a href="#information" class="btn btn-primary" data-navigate="information">
+              View Air Quality Data &amp; Charts &rarr;
+            </a>
+            <a href="#findings" class="btn btn-secondary" data-navigate="findings">
+              View Key Findings
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Highlights Grid (Vibrant Color Accent Boxes) -->
+        <div class="highlights-grid">
+          <div class="highlight-box highlight-box-teal">
+            <span class="stat-number">9</span>
+            <span class="stat-label">Monitoring Locations</span>
+            <p class="stat-desc">Spanning transit, commercial, industrial MIDC, and educational zones.</p>
+          </div>
+          <div class="highlight-box highlight-box-blue">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Designated Areas</span>
+            <p class="stat-desc">AM-31 (SRO Office), AM-8 (Police Chowky), and O-34 (Sports Stadium).</p>
+          </div>
+          <div class="highlight-box highlight-box-indigo">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Monsoon Months</span>
+            <p class="stat-desc">Evaluating seasonal trends across June, July, and August.</p>
+          </div>
+          <div class="highlight-box highlight-box-amber">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Key Pollutants</span>
+            <p class="stat-desc">Detailed tracking of PM2.5, PM10, NO₂, SO₂, and Carbon Monoxide.</p>
+          </div>
+        </div>
+
+        <!-- Research Framework & Methodology 3-Box Strip -->
+        <div class="methodology-grid">
+          <div class="method-card method-card-teal">
+            <div class="method-header">
+              <span class="method-icon">&#128506;</span>
+              <h3 class="method-title">Spatial Stratification</h3>
+            </div>
+            <p class="method-text">Classifies Boisar into 3 distinct operational zones to isolate industrial point emissions from commercial traffic and recreational baselines.</p>
+          </div>
+          <div class="method-card method-card-blue">
+            <div class="method-header">
+              <span class="method-icon">&#127783;</span>
+              <h3 class="method-title">Monsoon Scavenging</h3>
+            </div>
+            <p class="method-text">Measures atmospheric washout effects during intense coastal rainfall in July, tracking particulate reduction dynamics.</p>
+          </div>
+          <div class="method-card method-card-amber">
+            <div class="method-header">
+              <span class="method-icon">&#9878;</span>
+              <h3 class="method-title">NAAQS Standards</h3>
+            </div>
+            <p class="method-text">Evaluates exceedance factors against Central Pollution Control Board (CPCB) ambient limits for respirable particulate matter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. INFORMATION PAGE ==================== -->
+    <section id="view-information" class="page-view">
+      
+      <!-- Main Section Heading -->
+      <div class="section-title-wrap">
+        <h2 class="section-heading">Air Quality Trend Analysis Using Open Environmental Data of Boisar</h2>
+        <p class="section-lead">Select an environmental monitoring location below to inspect location-specific trends and comparative benchmarks.</p>
+      </div>
+
+      <!-- Two Boxes Side-by-Side: Location & Area (Enhanced Color Styling) -->
+      <div class="selectors-container">
+        
+        <!-- Box 1: Location Dropdown (9 Options) -->
+        <div class="selector-box selector-box-teal box-location">
+          <div class="box-header">
+            <span class="box-number">Box 1</span>
+            <label for="select-location" class="box-title">Select Location</label>
+          </div>
+          <div class="box-body">
+            <select id="select-location" class="form-select">
+              <!-- Populated via JavaScript with exactly 9 locations -->
+            </select>
+            <span class="input-helper">Choose from 9 active monitoring stations across Boisar.</span>
+          </div>
+        </div>
+
+        <!-- Box 2: Area Dropdown (3 Options, Read-only / Auto-mapped) -->
+        <div class="selector-box selector-box-indigo box-area">
+          <div class="box-header">
+            <span class="box-number">Box 2</span>
+            <label for="select-area" class="box-title">Area (Auto-Selected)</label>
+          </div>
+          <div class="box-body">
+            <select id="select-area" class="form-select disabled-input" disabled aria-readonly="true">
+              <!-- Populated via JavaScript with exactly 3 areas -->
+            </select>
+            <div id="area-badge-info" class="area-status-badge">
+              <!-- Auto-updated status badge -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Location Metadata Banner (Enriched Multi-Box KPI Strip) -->
+      <div id="location-quick-meta" class="location-meta-banner">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Exactly 5 Separate Charts (Each with Dedicated Color Accent) -->
+      <div class="charts-section">
+        
+        <!-- Graph 1: Monthly AQI Trend (Line Chart - Dependent on Box 1) -->
+        <div class="chart-card chart-card-blue">
+          <div class="chart-header">
+            <div class="chart-tag dynamic-tag">Dynamically Updates with Box 1</div>
+            <h3 class="chart-title">Graph 1: Monthly AQI Trend</h3>
+            <p class="chart-subtitle">Monthly Air Quality Index trajectory (June, July, August) for the currently selected location.</p>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="chart-monthly-aqi"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 2: Pollutants Comparison (Bar Chart - Dependent on Box 1) -->
+        <div class="chart-card chart-card-orange">
+          <div class="chart-header">
+            <div class="chart-tag dynamic-tag">Dynamically Updates with Box 1</div>
+            <h3 class="chart-title">Graph 2: Pollutants Comparison</h3>
+            <p class="chart-subtitle">Comparison of major air pollutants (PM2.5, PM10, NO₂, SO₂, CO) for the selected location.</p>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="chart-pollutants-comparison"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 3: Location-wise AQI (Polar Area / Radial Spatial Chart - Compares All 9 Locations) -->
+        <div class="chart-card chart-card-teal">
+          <div class="chart-header chart-header-flex">
+            <div>
+              <div class="chart-tag static-tag">Benchmark Chart (All 9 Locations)</div>
+              <h3 class="chart-title">Graph 3: Location-wise Average AQI</h3>
+              <p class="chart-subtitle">Spatial radial evaluation of June–August average AQI across all 9 environmental stations.</p>
+            </div>
+            <div class="chart-type-selector">
+              <button type="button" class="btn-chart-toggle active" data-chart-type="polarArea">Polar Area</button>
+              <button type="button" class="btn-chart-toggle" data-chart-type="radar">Radar</button>
+              <button type="button" class="btn-chart-toggle" data-chart-type="bar">Bar</button>
+            </div>
+          </div>
+          <div class="chart-canvas-wrapper polar-chart">
+            <canvas id="chart-location-wise"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 4: Area-wise AQI (Bar Chart - Compares 3 Areas) -->
+        <div class="chart-card chart-card-indigo">
+          <div class="chart-header">
+            <div class="chart-tag static-tag">Zonal Comparison (3 Areas)</div>
+            <h3 class="chart-title">Graph 4: Area-wise Average AQI</h3>
+            <p class="chart-subtitle">Comparative assessment of AM-31, AM-8, and O-34 highlighting highest and lowest pollution areas.</p>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="chart-area-wise"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 5: PM2.5 Monthly Trend (Line Chart - Overall Dataset) -->
+        <div class="chart-card chart-card-crimson">
+          <div class="chart-header">
+            <div class="chart-tag highlight-pm-tag">Critical Health Indicator</div>
+            <h3 class="chart-title">Graph 5: Monthly PM2.5 Trend</h3>
+            <p class="chart-subtitle">Overall regional PM2.5 concentration across June, July, and August evaluated against NAAQS standards.</p>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="chart-pm25-trend"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CPCB Air Quality Index (AQI) Color Scale Reference Box -->
+      <div class="aqi-scale-box">
+        <div class="scale-header">
+          <span class="scale-badge">CPCB National Standard</span>
+          <h4 class="scale-title">Air Quality Index (AQI) Classification Scale</h4>
+        </div>
+        <div class="aqi-scale-grid">
+          <div class="scale-item item-good">
+            <span class="scale-range">0 – 50</span>
+            <span class="scale-name">Good</span>
+            <span class="scale-impact">Minimal Impact</span>
+          </div>
+          <div class="scale-item item-satisfactory">
+            <span class="scale-range">51 – 100</span>
+            <span class="scale-name">Satisfactory</span>
+            <span class="scale-impact">Minor Discomfort</span>
+          </div>
+          <div class="scale-item item-moderate">
+            <span class="scale-range">101 – 200</span>
+            <span class="scale-name">Moderate</span>
+            <span class="scale-impact">Breathing Discomfort</span>
+          </div>
+          <div class="scale-item item-poor">
+            <span class="scale-range">201 – 300</span>
+            <span class="scale-name">Poor</span>
+            <span class="scale-impact">Respiratory Illness</span>
+          </div>
+          <div class="scale-item item-very-poor">
+            <span class="scale-range">301 – 400</span>
+            <span class="scale-name">Very Poor</span>
+            <span class="scale-impact">Chronic Issues</span>
+          </div>
+          <div class="scale-item item-severe">
+            <span class="scale-range">401 – 500</span>
+            <span class="scale-name">Severe</span>
+            <span class="scale-impact">Severe Health Risk</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exactly 2 Small Information Boxes Below Charts -->
+      <div class="advisory-container">
+        
+        <!-- Information Box 1 -->
+        <div class="advisory-box health-advisory">
+          <div class="advisory-icon" aria-hidden="true">&#9888;</div>
+          <div class="advisory-content">
+            <h4 class="advisory-title">Health Concern Advisory</h4>
+            <p class="advisory-text">
+              “PM2.5 is one of the most concerning pollutants because its very small particles can penetrate deep into the lungs.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Information Box 2 -->
+        <div class="advisory-box safety-advisory">
+          <div class="advisory-icon" aria-hidden="true">&#128737;</div>
+          <div class="advisory-content">
+            <h4 class="advisory-title">Precautionary Recommendation</h4>
+            <p class="advisory-text">
+              “Please wear a mask and take precautions when pollution levels are high.”
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== 3. FINDINGS PAGE ==================== -->
+    <section id="view-findings" class="page-view">
+      
+      <!-- One Large Findings Box -->
+      <div class="large-findings-box">
+        <div class="findings-header">
+          <span class="findings-badge">Data Science Analytical Summary</span>
+          <h2 class="findings-heading">Key Findings</h2>
+          <p class="findings-subheading">
+            Computed dynamically from the June–August open environmental dataset covering all 9 stations in Boisar / Tarapur.
+          </p>
+        </div>
+
+        <!-- Dynamic Findings Container (Computed via js/findings.js) -->
+        <div id="dynamic-findings-content">
+          <!-- Injected dynamically by FindingsService -->
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Project Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Air Quality Trend Analysis</h4>
+        <p>B.Sc. Data Science Academic Project | Boisar / Tarapur (June, July, August)</p>
+      </div>
+      <div class="footer-col text-right">
+        <p>Based on Open Environmental Monitoring Data</p>
+        <p class="small-text">Adhering to NAAQS &amp; CPCB Environmental Assessment Standards</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Local with CDN fallback for Chart.js -->
+  <script src="js/chart.min.js"></script>
+  <script>
+    // CDN fallback in case local file is missing
+    if (typeof Chart === 'undefined') {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/chart.js"><\/script>');
+    }
+  </script>
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/findings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
